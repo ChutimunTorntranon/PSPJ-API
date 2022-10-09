@@ -36,6 +36,10 @@ module.exports = (sequelize, DataTypes) => {
 					len: [6, 100],
 				},
 			},
+			Admin: {
+				type: DataTypes.BOOLEAN,
+				default: false,
+			},
 		},
 		{ underscored: true }
 	);

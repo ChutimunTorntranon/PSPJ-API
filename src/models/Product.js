@@ -9,6 +9,10 @@ module.exports = (sequelize, DataTypes) => {
 					notEmpty: true,
 				},
 			},
+			ImageProduct: {
+				type: DataTypes.STRING,
+				allowNull: true,
+			},
 			priceProduct: {
 				type: DataTypes.STRING,
 				allowNull: false,

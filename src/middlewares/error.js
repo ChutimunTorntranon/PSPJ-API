@@ -12,5 +12,6 @@ module.exports = (err, req, res, next) => {
 	if (err.name === 'TokenExpiredError' || err.name === 'JsonWebTokenError') {
 		err.statusCode = 401;
 	}
+
 	res.status(err.statusCode || 500).json({ message: err.message });
 };
